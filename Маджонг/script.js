@@ -1,8 +1,8 @@
 const buttons = document.querySelectorAll('.button');
 
 buttons.forEach((button) => {
-  const x = Math.floor(Math.random() * 1200);
-  const y = Math.floor(Math.random() * 90);
+  const x = Math.floor(Math.random() * window.innerWidth);
+  const y = Math.floor(Math.random() * window.innerHeight);
   button.style.transform = `translate(${x}px, ${y}px)`;
 });
 
