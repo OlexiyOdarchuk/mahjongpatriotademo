@@ -1,0 +1,36 @@
+   button {
+        background: #eee;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 5px 5px 5px black,
+                    -5px -5px 5px black;
+      }
+      
+      .disappear {
+        animation: disappear 0.5s forwards;
+      }
+      
+      @keyframes disappear {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          display: none;
+        }
+      }
+      .dice-container{
+        display: flex;
+        
+      }
+      .game-board{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
